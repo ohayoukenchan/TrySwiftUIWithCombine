@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09D1753524D26478005CADCE /* GundamCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1753424D26478005CADCE /* GundamCollections.swift */; };
+		09D1753524D26478005CADCE /* GundamCollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1753424D26478005CADCE /* GundamCollectionsView.swift */; };
+		09D1753824D266A3005CADCE /* GundamCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1753724D266A3005CADCE /* GundamCollectionViewModel.swift */; };
+		09D1753B24D266E4005CADCE /* GundamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1753A24D266E4005CADCE /* GundamModel.swift */; };
+		09D1753D24D26867005CADCE /* GundamRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1753C24D26867005CADCE /* GundamRowViewModel.swift */; };
+		09D1754124D26ADB005CADCE /* GundamFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1754024D26ADB005CADCE /* GundamFetcher.swift */; };
+		09D1754524D26B63005CADCE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1754424D26B63005CADCE /* Errors.swift */; };
+		09D1754824D26C0D005CADCE /* GundamFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1754724D26C0D005CADCE /* GundamFetchable.swift */; };
+		09D1754A24D27102005CADCE /* GundamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1754924D27102005CADCE /* GundamView.swift */; };
 		09DDA16124C1377C00F54D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DDA16024C1377C00F54D0B /* AppDelegate.swift */; };
 		09DDA16324C1377C00F54D0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DDA16224C1377C00F54D0B /* SceneDelegate.swift */; };
 		09DDA16724C1377D00F54D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA16624C1377D00F54D0B /* Assets.xcassets */; };
@@ -16,7 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09D1753424D26478005CADCE /* GundamCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamCollections.swift; sourceTree = "<group>"; };
+		09D1753424D26478005CADCE /* GundamCollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamCollectionsView.swift; sourceTree = "<group>"; };
+		09D1753724D266A3005CADCE /* GundamCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamCollectionViewModel.swift; sourceTree = "<group>"; };
+		09D1753A24D266E4005CADCE /* GundamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamModel.swift; sourceTree = "<group>"; };
+		09D1753C24D26867005CADCE /* GundamRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamRowViewModel.swift; sourceTree = "<group>"; };
+		09D1754024D26ADB005CADCE /* GundamFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamFetcher.swift; sourceTree = "<group>"; };
+		09D1754424D26B63005CADCE /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		09D1754724D26C0D005CADCE /* GundamFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamFetchable.swift; sourceTree = "<group>"; };
+		09D1754924D27102005CADCE /* GundamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamView.swift; sourceTree = "<group>"; };
 		09DDA15D24C1377C00F54D0B /* TrySwiftUIWithCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrySwiftUIWithCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DDA16024C1377C00F54D0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DDA16224C1377C00F54D0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,9 +54,59 @@
 		09D1753324D26424005CADCE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				09D1753424D26478005CADCE /* GundamCollections.swift */,
+				09D1753424D26478005CADCE /* GundamCollectionsView.swift */,
+				09D1754924D27102005CADCE /* GundamView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		09D1753624D2666B005CADCE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				09D1753724D266A3005CADCE /* GundamCollectionViewModel.swift */,
+				09D1753C24D26867005CADCE /* GundamRowViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		09D1753924D266D4005CADCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09D1753A24D266E4005CADCE /* GundamModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09D1753E24D26ABC005CADCE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				09D1754024D26ADB005CADCE /* GundamFetcher.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		09D1754224D26B35005CADCE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09D1754324D26B3C005CADCE /* Errors */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		09D1754324D26B3C005CADCE /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				09D1754424D26B63005CADCE /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		09D1754624D26BEC005CADCE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				09D1754724D26C0D005CADCE /* GundamFetchable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		09DDA15424C1377C00F54D0B = {
@@ -65,7 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				09DDA16024C1377C00F54D0B /* AppDelegate.swift */,
+				09D1754624D26BEC005CADCE /* Protocols */,
+				09D1754224D26B35005CADCE /* Utils */,
+				09D1753E24D26ABC005CADCE /* API */,
+				09D1753924D266D4005CADCE /* Models */,
 				09DDA16224C1377C00F54D0B /* SceneDelegate.swift */,
+				09D1753624D2666B005CADCE /* ViewModels */,
 				09D1753324D26424005CADCE /* Views */,
 				09DDA16624C1377D00F54D0B /* Assets.xcassets */,
 				09DDA16B24C1377D00F54D0B /* LaunchScreen.storyboard */,
@@ -154,9 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D1754824D26C0D005CADCE /* GundamFetchable.swift in Sources */,
 				09DDA16124C1377C00F54D0B /* AppDelegate.swift in Sources */,
-				09D1753524D26478005CADCE /* GundamCollections.swift in Sources */,
+				09D1753D24D26867005CADCE /* GundamRowViewModel.swift in Sources */,
+				09D1753524D26478005CADCE /* GundamCollectionsView.swift in Sources */,
+				09D1753824D266A3005CADCE /* GundamCollectionViewModel.swift in Sources */,
+				09D1754524D26B63005CADCE /* Errors.swift in Sources */,
 				09DDA16324C1377C00F54D0B /* SceneDelegate.swift in Sources */,
+				09D1754124D26ADB005CADCE /* GundamFetcher.swift in Sources */,
+				09D1754A24D27102005CADCE /* GundamView.swift in Sources */,
+				09D1753B24D266E4005CADCE /* GundamModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
