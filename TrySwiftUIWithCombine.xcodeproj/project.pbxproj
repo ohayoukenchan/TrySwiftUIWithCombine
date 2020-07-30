@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D1753524D26478005CADCE /* GundamCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1753424D26478005CADCE /* GundamCollections.swift */; };
 		09DDA16124C1377C00F54D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DDA16024C1377C00F54D0B /* AppDelegate.swift */; };
 		09DDA16324C1377C00F54D0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DDA16224C1377C00F54D0B /* SceneDelegate.swift */; };
-		09DDA16524C1377C00F54D0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DDA16424C1377C00F54D0B /* ContentView.swift */; };
 		09DDA16724C1377D00F54D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA16624C1377D00F54D0B /* Assets.xcassets */; };
 		09DDA16A24C1377D00F54D0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA16924C1377D00F54D0B /* Preview Assets.xcassets */; };
 		09DDA16D24C1377D00F54D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA16B24C1377D00F54D0B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D1753424D26478005CADCE /* GundamCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GundamCollections.swift; sourceTree = "<group>"; };
 		09DDA15D24C1377C00F54D0B /* TrySwiftUIWithCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrySwiftUIWithCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DDA16024C1377C00F54D0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DDA16224C1377C00F54D0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09DDA16424C1377C00F54D0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09DDA16624C1377D00F54D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09DDA16924C1377D00F54D0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09DDA16C24C1377D00F54D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D1753324D26424005CADCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09D1753424D26478005CADCE /* GundamCollections.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		09DDA15424C1377C00F54D0B = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +66,7 @@
 			children = (
 				09DDA16024C1377C00F54D0B /* AppDelegate.swift */,
 				09DDA16224C1377C00F54D0B /* SceneDelegate.swift */,
-				09DDA16424C1377C00F54D0B /* ContentView.swift */,
+				09D1753324D26424005CADCE /* Views */,
 				09DDA16624C1377D00F54D0B /* Assets.xcassets */,
 				09DDA16B24C1377D00F54D0B /* LaunchScreen.storyboard */,
 				09DDA16E24C1377D00F54D0B /* Info.plist */,
@@ -147,8 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DDA16124C1377C00F54D0B /* AppDelegate.swift in Sources */,
+				09D1753524D26478005CADCE /* GundamCollections.swift in Sources */,
 				09DDA16324C1377C00F54D0B /* SceneDelegate.swift in Sources */,
-				09DDA16524C1377C00F54D0B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
