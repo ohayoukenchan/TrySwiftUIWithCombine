@@ -28,11 +28,11 @@ struct GundamRowViewModel: Identifiable {
         item.product.number
     }
 
-    var url: URL? {
+    var url: String {
         guard !item.imageUrl.isEmpty else {
-            return nil
+            return ""
         }
-        return URL(string: item.imageUrl)
+        return item.imageUrl
     }
 
     init(item: GundamModel) {
