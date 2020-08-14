@@ -20,7 +20,7 @@ struct GundamCollectionsView: View {
     NavigationView {
       List {
         searchField
-        textfield
+        //textfield
         if viewModel.dataSource.isEmpty {
           emptySection
         } else {
@@ -45,11 +45,11 @@ private extension GundamCollectionsView {
         }
     }
 
-    var textfield: some View {
-        Section {
-            Text(String(viewModel.tag)).foregroundColor(.gray)
-        }
-    }
+//    var textfield: some View {
+//        Section {
+//            Text(String(viewModel.tag)).foregroundColor(.gray)
+//        }
+//    }
 
   var gundamRowSection: some View {
     Section {
