@@ -9,16 +9,11 @@
 import Foundation
 import Combine
 
-//var name: String
-//var description: String
-//var product: Model
-//var imageUrl: String
-
-var sampleData: [GundamModel] = [GundamModel(
-    name: "aaa",
-    description: "aaa",
-    product: GundamModel.Model(number: "aaa"),
-    imageUrl: "hoeg")
+var sampleData: [GundamModel]? = [GundamModel(
+    name: "武者頑駄無",
+    description: "強い",
+    product: GundamModel.Model(number: "RX-78"),
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/sd-gundam-memories.appspot.com/o/nise_gundam.jpg?alt=media&token=ae23e016-ed91-4d5f-ae54-8bfe3bc7966e")
 ]
 
 class GundamFetcher {
@@ -37,18 +32,26 @@ extension GundamFetcher: GundamFetchable {
   }
 
   private func fetchGundam<T>(with requestComponents: URLComponents) -> AnyPublisher<T, RequestError> where T: Decodable {
-    guard let url = requestComponents.url else {
-      let error = RequestError.network(description: "Couldn't create URL")
-      return Fail(error: error).eraseToAnyPublisher()
+//    guard let url = requestComponents.url else {
+//      let error = RequestError.network(description: "Couldn't create URL")
+//      return Fail(error: error).eraseToAnyPublisher()
+//    }
+//    return session.dataTaskPublisher(for: URLRequest(url: url))
+//      .mapError { error in
+//        .network(description: error.localizedDescription)
+//    }
+//    .flatMap(maxPublishers: .max(1)) { pair in
+//      decode(pair.data)
+//    }
+
+
+    guard let data = sampleData else {
+        return Fail(error: RequestError.network(description: "Couldn't create URL"))
+        .eraseToAnyPublisher()
     }
-    return session.dataTaskPublisher(for: URLRequest(url: url))
-      .mapError { error in
-        .network(description: error.localizedDescription)
-    }
-    .flatMap(maxPublishers: .max(1)) { pair in
-      decode(pair.data)
-    }
-    .eraseToAnyPublisher()
+    return Just(data as! T)
+        .setFailureType(to: RequestError.self)
+        .eraseToAnyPublisher()
   }
 }
 
