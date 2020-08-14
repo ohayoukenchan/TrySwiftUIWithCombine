@@ -13,7 +13,7 @@ struct GundamView: View {
 
     @State var isShowSafariAlert = false
 
-    var openUrl: URL? {
+    var openUrl: String {
         viewModel.url
     }
 
@@ -28,6 +28,8 @@ struct GundamView: View {
                     Text("\(viewModel.modelNumber)")
                     Text("\(viewModel.name)")
                     Text("\(viewModel.description)")
+                    URLImage(url: viewModel.url)
+                    .aspectRatio(contentMode: .fit)
                 }
                 ZStack {
                     Button("") {
@@ -41,7 +43,9 @@ struct GundamView: View {
                   primaryButton: .default(Text("ok"),
                                           action: {
                                             self.isShowSafariAlert = false
-                                            guard let url = self.viewModel.url else {return}
+                                            guard let url = URL(string: self.viewModel.url) else {
+                                                return
+                                            }
                                             UIApplication.shared.open(url)
                   }),
                   secondaryButton: .cancel(Text("キャンセル")))
