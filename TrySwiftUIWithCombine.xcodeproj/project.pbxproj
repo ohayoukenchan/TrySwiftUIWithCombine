@@ -22,6 +22,7 @@
 		09DDA16D24C1377D00F54D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA16B24C1377D00F54D0B /* LaunchScreen.storyboard */; };
 		09FAEF8124E621070000BB25 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FAEF8024E621070000BB25 /* ImageDownloader.swift */; };
 		09FAEF8324E621600000BB25 /* ImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FAEF8224E621600000BB25 /* ImageVIew.swift */; };
+		95D9B95B27292E314ED53BA1 /* Pods_TrySwiftUIWithCombine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501DF083BC3F373EB501281D /* Pods_TrySwiftUIWithCombine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		09DDA16E24C1377D00F54D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09FAEF8024E621070000BB25 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		09FAEF8224E621600000BB25 /* ImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVIew.swift; sourceTree = "<group>"; };
+		501DF083BC3F373EB501281D /* Pods_TrySwiftUIWithCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrySwiftUIWithCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B91EA67FAE84F60F9FEECD /* Pods-TrySwiftUIWithCombine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrySwiftUIWithCombine.release.xcconfig"; path = "Target Support Files/Pods-TrySwiftUIWithCombine/Pods-TrySwiftUIWithCombine.release.xcconfig"; sourceTree = "<group>"; };
+		EE52039B2EFA82893BE774A8 /* Pods-TrySwiftUIWithCombine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrySwiftUIWithCombine.debug.xcconfig"; path = "Target Support Files/Pods-TrySwiftUIWithCombine/Pods-TrySwiftUIWithCombine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D9B95B27292E314ED53BA1 /* Pods_TrySwiftUIWithCombine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,8 @@
 			children = (
 				09DDA15F24C1377C00F54D0B /* TrySwiftUIWithCombine */,
 				09DDA15E24C1377C00F54D0B /* Products */,
+				84405E4E1F7F26BF82A873B0 /* Pods */,
+				E03F378B6B3D640F7FA25FAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +165,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		84405E4E1F7F26BF82A873B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE52039B2EFA82893BE774A8 /* Pods-TrySwiftUIWithCombine.debug.xcconfig */,
+				D0B91EA67FAE84F60F9FEECD /* Pods-TrySwiftUIWithCombine.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E03F378B6B3D640F7FA25FAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				501DF083BC3F373EB501281D /* Pods_TrySwiftUIWithCombine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09DDA17124C1377D00F54D0B /* Build configuration list for PBXNativeTarget "TrySwiftUIWithCombine" */;
 			buildPhases = (
+				F101CFA49C688CC53F7C7790 /* [CP] Check Pods Manifest.lock */,
 				09DDA15924C1377C00F54D0B /* Sources */,
 				09DDA15A24C1377C00F54D0B /* Frameworks */,
 				09DDA15B24C1377C00F54D0B /* Resources */,
+				1E7DFBEF5D1F8D3D851C8AA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +250,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E7DFBEF5D1F8D3D851C8AA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrySwiftUIWithCombine/Pods-TrySwiftUIWithCombine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrySwiftUIWithCombine/Pods-TrySwiftUIWithCombine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrySwiftUIWithCombine/Pods-TrySwiftUIWithCombine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F101CFA49C688CC53F7C7790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrySwiftUIWithCombine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09DDA15924C1377C00F54D0B /* Sources */ = {
@@ -374,6 +443,7 @@
 		};
 		09DDA17224C1377D00F54D0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE52039B2EFA82893BE774A8 /* Pods-TrySwiftUIWithCombine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +464,7 @@
 		};
 		09DDA17324C1377D00F54D0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0B91EA67FAE84F60F9FEECD /* Pods-TrySwiftUIWithCombine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
