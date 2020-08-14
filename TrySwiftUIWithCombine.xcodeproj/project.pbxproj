@@ -20,6 +20,8 @@
 		09DDA16724C1377D00F54D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA16624C1377D00F54D0B /* Assets.xcassets */; };
 		09DDA16A24C1377D00F54D0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA16924C1377D00F54D0B /* Preview Assets.xcassets */; };
 		09DDA16D24C1377D00F54D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DDA16B24C1377D00F54D0B /* LaunchScreen.storyboard */; };
+		09FAEF8124E621070000BB25 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FAEF8024E621070000BB25 /* ImageDownloader.swift */; };
+		09FAEF8324E621600000BB25 /* ImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FAEF8224E621600000BB25 /* ImageVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		09DDA16924C1377D00F54D0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09DDA16C24C1377D00F54D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09DDA16E24C1377D00F54D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09FAEF8024E621070000BB25 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		09FAEF8224E621600000BB25 /* ImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			children = (
 				09D1753424D26478005CADCE /* GundamCollectionsView.swift */,
 				09D1754924D27102005CADCE /* GundamView.swift */,
+				09FAEF8224E621600000BB25 /* ImageVIew.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				09D1754324D26B3C005CADCE /* Errors */,
+				09FAEF8024E621070000BB25 /* ImageDownloader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -223,12 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09FAEF8324E621600000BB25 /* ImageVIew.swift in Sources */,
 				09D1754824D26C0D005CADCE /* GundamFetchable.swift in Sources */,
 				09DDA16124C1377C00F54D0B /* AppDelegate.swift in Sources */,
 				09D1753D24D26867005CADCE /* GundamRowViewModel.swift in Sources */,
 				09D1753524D26478005CADCE /* GundamCollectionsView.swift in Sources */,
 				09D1753824D266A3005CADCE /* GundamCollectionViewModel.swift in Sources */,
 				09D1754524D26B63005CADCE /* Errors.swift in Sources */,
+				09FAEF8124E621070000BB25 /* ImageDownloader.swift in Sources */,
 				09DDA16324C1377C00F54D0B /* SceneDelegate.swift in Sources */,
 				09D1754124D26ADB005CADCE /* GundamFetcher.swift in Sources */,
 				09D1754A24D27102005CADCE /* GundamView.swift in Sources */,
